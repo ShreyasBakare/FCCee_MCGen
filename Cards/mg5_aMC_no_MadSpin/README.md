@@ -18,7 +18,7 @@ Use the cards from:
 
 [https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_no_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_no_MadSpin)
 
-You will need both `proc_card.dat` and `run_card.dat` from this directory.
+You will need `proc_card.dat` from this directory.
 
 --
 
