@@ -17,7 +17,7 @@ This sets up the environment for MadGraph5_aMC@NLO via Key4HEP.
 
 Use the cards from:
 
-[https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_no_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_no_MadSpin)
+[https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin)
 
 You will need `proc_card.dat` and `madspin_card.dat` from this directory.
 
