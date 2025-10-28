@@ -1,5 +1,5 @@
 # e+ e- → Z H (H → l⁺ l⁻ a) Generation using MadGraph5_aMC@NLO (without using MadSpin)
---
+---
 
 ## 1. Prerequisites
 
@@ -20,7 +20,7 @@ Use the cards from:
 
 You will need `proc_card.dat` from this directory.
 
---
+---
 
 ## 2. Process Generation
 
@@ -36,7 +36,7 @@ You will need `proc_card.dat` from this directory.
 
 4. `launch DalitzDecay`
 
---
+---
 
 ## Output Behavior
 
