@@ -32,7 +32,7 @@ You will need both `proc_card.dat` and `run_card.dat` from this directory.
 
 120.0     = ebeam2  ! beam 2 total energy in GeV
 
-3. `mg5_aMC'
+3. `mg5_aMC`
 
 4. `launch DalitzDecay`
 
@@ -52,4 +52,4 @@ Please follow one of the following suggestions to fix the issue:
 - check that you do not have -integrable- singularity in your amplitude.
 ```
 
-Therefore it's probably better to use MadGraph to `generate e+ e- > z h' and then MadSpin to decay the Higgs `h > l+ l- a` as shown in [https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin)
+Therefore it's probably better to use MadGraph to `generate e+ e- > z h` and then MadSpin to decay the Higgs `h > l+ l- a` as shown in [https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin)
