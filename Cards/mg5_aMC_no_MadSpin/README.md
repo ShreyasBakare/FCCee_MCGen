@@ -1,5 +1,4 @@
 # e+ e- → Z H (H → l⁺ l⁻ a) Generation using MadGraph5_aMC@NLO (without using MadSpin)
-hi
 --
 
 ## 1. Prerequisites
