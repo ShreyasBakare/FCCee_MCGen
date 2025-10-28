@@ -33,7 +33,7 @@ You will need `proc_card.dat` and `madspin_card.dat` from this directory.
 
 120.0     = ebeam2  ! beam 2 total energy in GeV
 
-3. Copy `madspin_card.dat` to `DalitzDecay_MS/Cards`
+3. Copy `madspin_card.dat` to DalitzDecay_MS/Cards
 
 4. `mg5_aMC`
 
