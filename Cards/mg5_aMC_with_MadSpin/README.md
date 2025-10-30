@@ -27,7 +27,7 @@ wget https://github.com/ShreyasBakare/FCCee_MCGen/raw/main/Cards/mg5_aMC_with_Ma
 
 ---
 
-## 2. Events Generation
+## 2. Event Generation
 
 ```
 mg5_aMC proc_card.dat
