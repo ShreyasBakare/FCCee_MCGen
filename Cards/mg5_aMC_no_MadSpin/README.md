@@ -39,7 +39,7 @@ DalitzDecay_MS/bin/generate_events -f
 
 ## Output Behavior
 
-- Generates ~448 out of 10000 events indicating phase-space integration difficulties typical of decays handled directly inside the main process. Woth a message like: 
+- Generates ~448 out of 10000 events indicating phase-space integration difficulties typical of decays handled directly inside the main process. With a message like: 
 ```
 INFO: fail to reach target 10000 failed to generate enough events.
 
