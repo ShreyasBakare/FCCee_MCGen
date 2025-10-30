@@ -1,4 +1,4 @@
-## e+ e- → z h @ 240GeV MC event generation using MadGraph5_aMC@NLO, where h → l⁺ l⁻ a and z > all all using MadSpin
+## e+ e- → z h @ 240GeV MC event generation using MadGraph5_aMC@NLO, where h → l⁺ l⁻ a and z → all all using MadSpin
 
 ---
 
