@@ -9,7 +9,8 @@ Make sure the following are prepared, if not already:
 1. heft Model `HC_NLO_X0_UFO` must be present in current directory.
 
 ```
-wget https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
+wget http://feynrules.irmp.ucl.ac.be/raw-attachment/wiki/HiggsCharacterisation/HC_NLO_X0_UFO.zip
+unzip HC_NLO_X0_UFO.zip
 ```
 
 2. Set up the environment for MadGraph5_aMC@NLO via Key4HEP:

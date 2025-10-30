@@ -1,47 +1,45 @@
-# e+ e- → Z H (H → l⁺ l⁻ a) Generation using MadGraph5_aMC@NLO (without using MadSpin)
+## MC event generation e+ e- → Z H (H → l⁺ l⁻ a) Generation using MadGraph5_aMC@NLO (without using MadSpin)
+
 ---
 
 ## 1. Prerequisites
 
-Make sure the following are prepared:
+Make sure the following are prepared, if not already:
 
-1. heft Model `HC_NLO_X0_UFO` must be present in this directory.
-You can get it from https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
+1. heft Model `HC_NLO_X0_UFO` must be present in current directory.
 
-2. `source /cvmfs/sw.hsf.org/key4hep/setup.sh`
+```
+wget http://feynrules.irmp.ucl.ac.be/raw-attachment/wiki/HiggsCharacterisation/HC_NLO_X0_UFO.zip
+unzip HC_NLO_X0_UFO.zip
+```
 
-This sets up the environment for MadGraph5_aMC@NLO via Key4HEP.
+2. Set up the environment for MadGraph5_aMC@NLO via Key4HEP:
 
-3. Cards:
+```
+source /cvmfs/sw.hsf.org/key4hep/setup.sh
+```
 
-Use the cards from:
-
-[https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_no_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_no_MadSpin)
-
-You will need `proc_card.dat` from this directory.
+3. Download MadGraph cards:
+```
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/Cards/mg5_aMC_no_MadSpin/proc_card.dat
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/Cards/mg5_aMC_no_MadSpin/run_card.dat
+``` 
 
 ---
 
-## 2. Process Generation
+## 2. Event Generation
 
-1. Run `mg5_aMC proc_card.dat`
-
-2. Modify center-of-mass energy to 240 GeV in: DalitzDecay/Cards/run_card.dat
-
-120.0     = ebeam1  ! beam 1 total energy in GeV
-
-120.0     = ebeam2  ! beam 2 total energy in GeV
-
-3. `mg5_aMC`
-
-4. `launch DalitzDecay`
+```
+mg5_aMC proc_card.dat
+cp -f run_card.dat DalitzDecay/Cards/.
+DalitzDecay_MS/bin/generate_events -f
+```
 
 ---
 
 ## Output Behavior
 
-- ~448 events generated in 4–5 minutes.
-- Indicates phase-space integration difficulties typical of decays handled directly inside the main process. Message like : 
+- Generates ~448 out of 10000 events indicating phase-space integration difficulties typical of decays handled directly inside the main process. Woth a message like: 
 ```
 INFO: fail to reach target 10000 failed to generate enough events.
 
