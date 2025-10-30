@@ -1,4 +1,4 @@
-## MC event generation e+ e- → Z H (H → l⁺ l⁻ a) Generation using MadGraph5_aMC@NLO (without using MadSpin)
+## MC event generation e+ e- → z h (h → l⁺ l⁻ a) using MadGraph5_aMC@NLO (without using MadSpin)
 
 ---
 
