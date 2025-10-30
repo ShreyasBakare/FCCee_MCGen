@@ -13,6 +13,8 @@ wget http://feynrules.irmp.ucl.ac.be/raw-attachment/wiki/HiggsCharacterisation/H
 unzip HC_NLO_X0_UFO.zip
 ```
 
+More about the model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
+
 2. Set up the environment for MadGraph5_aMC@NLO via Key4HEP:
 
 ```
