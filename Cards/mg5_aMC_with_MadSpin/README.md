@@ -47,4 +47,3 @@ DalitzDecay_MS/bin/generate_events -f
 
 ### Note:
 -   HC_NLO_X0_UFO stores mu+/- as m+/-, thus we have redefined l+/- in madspin_card.dat
--   
