@@ -6,7 +6,7 @@
 
 Make sure the following are prepared, if not already:
 
-1. heft Model `HC_NLO_X0_UFO` must be present in this directory.
+1. heft Model `HC_NLO_X0_UFO` must be present in current directory.
 
 ```
 wget https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
