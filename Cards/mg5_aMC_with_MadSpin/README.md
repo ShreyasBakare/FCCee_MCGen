@@ -1,47 +1,49 @@
-# e+ e- → Z H Generation using MadGraph5_aMC@NLO and (H → l⁺ l⁻ a) using MadSpin
+## e+ e- → z h @ 240GeV MC event generation using MadGraph5_aMC@NLO, where h → l⁺ l⁻ a and z > all all using MadSpin
 
 ---
 
 ## 1. Prerequisites
 
-Make sure the following are prepared:
+Make sure the following are prepared, if not already:
 
 1. heft Model `HC_NLO_X0_UFO` must be present in this directory.
-You can get it from https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
 
-2. `source /cvmfs/sw.hsf.org/key4hep/setup.sh`
+```
+wget https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
+```
 
-This sets up the environment for MadGraph5_aMC@NLO via Key4HEP.
+2. Set up the environment for MadGraph5_aMC@NLO via Key4HEP:
 
-3. Cards:
+```
+source /cvmfs/sw.hsf.org/key4hep/setup.sh
+```
 
-Use the cards from:
-
-[https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/Cards/mg5_aMC_with_MadSpin)
-
-You will need `proc_card.dat` and `madspin_card.dat` from this directory.
-
----
-
-## 2. Process Generation
-
-1. Run `mg5_aMC proc_card.dat`
-
-2. Modify center-of-mass energy to 240 GeV in: DalitzDecay_MS/Cards/run_card.dat
-
-120.0     = ebeam1  ! beam 1 total energy in GeV
-
-120.0     = ebeam2  ! beam 2 total energy in GeV
-
-3. Copy `madspin_card.dat` to DalitzDecay_MS/Cards
-
-4. `mg5_aMC`
-
-5. `launch DalitzDecay_MS`
+3. Download MadGraph cards:
+```
+wget https://github.com/ShreyasBakare/FCCee_MCGen/raw/main/Cards/mg5_aMC_with_MadSpin/proc_card.dat
+wget https://github.com/ShreyasBakare/FCCee_MCGen/raw/main/Cards/mg5_aMC_with_MadSpin/run_card.dat
+wget https://github.com/ShreyasBakare/FCCee_MCGen/raw/main/Cards/mg5_aMC_with_MadSpin/madspin_card.dat
+``` 
 
 ---
 
-## Output Behavior
+## 2. Events Generation
+
+```
+mg5_aMC proc_card.dat
+cp -f run_card.dat madspin_card.dat DalitzDecay_MS/Cards/.
+DalitzDecay_MS/bin/generate_events -f
+```
+
+---
+
+### Output Behavior
 
 - Generates all 10,000 events.
-- Took much longer O(hour)
+- Takes time of O(hour)
+
+---
+
+### Note:
+-   HC_NLO_X0_UFO stores mu+/- as m+/-, thus we have redefined l+/- in madspin_card.dat
+-   

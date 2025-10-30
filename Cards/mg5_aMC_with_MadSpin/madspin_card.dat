@@ -28,4 +28,5 @@ set spinmode=none
 define l+ = e+ m+
 define l- = e- m-
 decay x0 > l+ l- a
+decay z > all all
 launch
