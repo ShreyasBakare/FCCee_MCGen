@@ -2,7 +2,8 @@
 
 ---
 
-(edit: 
+[
+    edit: 
 
 So there are two samples I generate:
 
@@ -12,7 +13,11 @@ sample 1 uses above added madspin card
 sample 2 uses exact same madspin card just the line `decay z > all all` removed. 
             (Z does not decay in madspin; decays later in pythia)
 
-)
+Here both samples 1 & 2 (Z decay - w/ madspin and - w/o madspin) face the same `setting mass failed` error when passed through 3. Pythia or 3. Pythia + Delphes. 
+
+~80% events pass through. ~20% don't : Don't see any pattern (!?)
+
+]
 
 ## 1. Prerequisites
 
