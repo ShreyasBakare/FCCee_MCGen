@@ -57,7 +57,7 @@ DalitzDecay_MS/bin/generate_events -f
 
 ```
 cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
-k4run config/pythia.py -n 10000 --out.filename edm4hep_events.root --Pythia8.PythiaInterface.pythiacard p8_lhereader.cmd | tee edm4hep.log
+k4run config/pythia.py -n 10000 --out.filename edm4hep_p8events.root --Pythia8.PythiaInterface.pythiacard p8_lhereader.cmd | tee edm4hep.log
 ```
 OR
 ---
