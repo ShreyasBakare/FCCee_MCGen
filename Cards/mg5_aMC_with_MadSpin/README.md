@@ -8,8 +8,10 @@ So there are two samples I generate:
 
 sample 1 uses above added madspin card
             (Z decays in madspin)
+            
 sample 2 uses exact same madspin card just the line `decay z > all all` removed. 
             (Z does not decay in madspin; decays later in pythia)
+
 )
 
 ## 1. Prerequisites
