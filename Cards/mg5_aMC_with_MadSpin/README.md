@@ -55,6 +55,12 @@ cp -f run_card.dat madspin_card.dat DalitzDecay_MS/Cards/.
 DalitzDecay_MS/bin/generate_events -f
 ```
 
+---
+
+### Output Behavior
+
+- Generates all 10,000 events.
+- Takes time of O(13 hour)
 
 ---
 
@@ -73,14 +79,6 @@ OR
 cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
 DelphesPythia8_EDM4HEP config/card_IDEA.tcl config/edm4hep_IDEA.tcl p8_lhereader.cmd ZH_dalitz_edm4hep.root
 ```
-
-
----
-
-### Output Behavior
-
-- Generates all 10,000 events.
-- Takes time of O(13 hour)
 
 ---
 
