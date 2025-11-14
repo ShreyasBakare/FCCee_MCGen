@@ -2,6 +2,16 @@
 
 ---
 
+(edit: 
+
+So there are two samples I generate:
+
+sample 1 uses above added madspin card
+            (Z decays in madspin)
+sample 2 uses exact same madspin card just the line `decay z > all all` removed. 
+            (Z does not decay in madspin; decays later in pythia)
+)
+
 ## 1. Prerequisites
 
 Make sure the following are prepared, if not already:
@@ -30,7 +40,7 @@ wget https://github.com/ShreyasBakare/FCCee_MCGen/raw/main/Cards/mg5_aMC_with_Ma
 
 ---
 
-## 2. Event Generation
+## 2. LH Event Generation
 
 ```
 mg5_aMC proc_card.dat
@@ -38,12 +48,23 @@ cp -f run_card.dat madspin_card.dat DalitzDecay_MS/Cards/.
 DalitzDecay_MS/bin/generate_events -f
 ```
 
+
+---
+
+## 3. Pythia
+
+```
+cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
+k4run config/pythia.py -n 10000 --out.filename edm4hep_events.root --Pythia8.PythiaInterface.pythiacard p8_lhereader.cmd | tee edm4hep.log
+```
+
+
 ---
 
 ### Output Behavior
 
 - Generates all 10,000 events.
-- Takes time of O(hour)
+- Takes time of O(13 hour)
 
 ---
 
