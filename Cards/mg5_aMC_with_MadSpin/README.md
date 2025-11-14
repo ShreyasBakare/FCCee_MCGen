@@ -8,7 +8,7 @@ So there are two samples I generate:
 
 sample 1 uses above added madspin card
             (Z decays in madspin)
-            
+
 sample 2 uses exact same madspin card just the line `decay z > all all` removed. 
             (Z does not decay in madspin; decays later in pythia)
 
@@ -58,6 +58,15 @@ DalitzDecay_MS/bin/generate_events -f
 ```
 cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
 k4run config/pythia.py -n 10000 --out.filename edm4hep_events.root --Pythia8.PythiaInterface.pythiacard p8_lhereader.cmd | tee edm4hep.log
+```
+OR
+---
+
+## 3. Pythia + Delphes
+
+```
+cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
+DelphesPythia8_EDM4HEP config/card_IDEA.tcl config/edm4hep_IDEA.tcl p8_lhereader.cmd ZH_dalitz_edm4hep.root
 ```
 
 
