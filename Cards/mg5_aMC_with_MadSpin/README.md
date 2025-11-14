@@ -15,7 +15,7 @@ sample 2 uses exact same madspin card just the line `decay z > all all` removed.
 
 Here both samples 1 & 2 (Z decay - w/ madspin and - w/o madspin) face the same `setting mass failed` error when passed through 3. Pythia or 3. Pythia + Delphes. 
 
-~80% events pass through. ~20% don't : Don't see any pattern (!?)
+~80% events pass through. ~20% don't : no visible pattern (!?)
 
 ]
 
