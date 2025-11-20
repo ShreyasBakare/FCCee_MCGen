@@ -1,4 +1,4 @@
-# $e^+e^- \to Z H$ ($H \to l^+ l^- \gamma$) at FCC-ee $\mathbf{\sqrt{s}} = {240\ \text{GeV}}$ (IDEA FastSim)
+# $e^+e^- \to Z H$ ($H \to l^+ l^- \gamma$) at FCC-ee $\mathbf{\sqrt{s}}$ = ${240\ \text{GeV}}$ (IDEA FastSim)
 
 ## Overview
 
