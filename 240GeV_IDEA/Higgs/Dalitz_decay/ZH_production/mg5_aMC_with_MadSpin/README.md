@@ -16,7 +16,7 @@ This repository contains the necessary instructions and files to generate Monte 
 ## 0. Setup
 Make sure the following are prepared, if not already:
 
-### i. Download cards and config files:
+### 0.1 Download cards and config files:
 ```
 wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/proc_card.dat
 wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/run_card.dat
@@ -30,7 +30,7 @@ wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Da
 cd ..
 ``` 
 
-### ii. heft Model `HC_NLO_X0_UFO` must be present in current working directory.
+### 0.2 heft Model `HC_NLO_X0_UFO` must be present in current working directory.
 
 ```
 wget http://feynrules.irmp.ucl.ac.be/raw-attachment/wiki/HiggsCharacterisation/HC_NLO_X0_UFO.zip
@@ -39,7 +39,7 @@ unzip HC_NLO_X0_UFO.zip
 - More about the model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
 - HC_NLO_X0_UFO stores mu+/- as m+/-, thus we have redefined l+/- in madspin_card.dat
 
-### iii. Set up the environment for MadGraph5_aMC@NLO, MadSpin, Pythia8 and Delphes via Key4HEP stack:
+### 0.3 Set up the environment for MadGraph5_aMC@NLO, MadSpin, Pythia8 and Delphes via Key4HEP stack:
 
 ```
 source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2025-05-29
