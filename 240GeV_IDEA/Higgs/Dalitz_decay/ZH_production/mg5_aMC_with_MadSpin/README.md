@@ -36,15 +36,15 @@ cd ..
 wget http://feynrules.irmp.ucl.ac.be/raw-attachment/wiki/HiggsCharacterisation/HC_NLO_X0_UFO.zip
 unzip HC_NLO_X0_UFO.zip
 ```
-More about the model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
--   HC_NLO_X0_UFO stores mu+/- as m+/-, thus we have redefined l+/- in madspin_card.dat
+- More about the model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
+- HC_NLO_X0_UFO stores mu+/- as m+/-, thus we have redefined l+/- in madspin_card.dat
 
 ### iii. Set up the environment for MadGraph5_aMC@NLO, MadSpin, Pythia8 and Delphes via Key4HEP stack:
 
 ```
 source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2025-05-29
 ```
-`-r 2025-05-29` is currently the latest Key4HEP stack 
+- `-r 2025-05-29` is currently the latest Key4HEP stack 
 
 
 ## 2. MadGraph5_aMC + MadSpin
