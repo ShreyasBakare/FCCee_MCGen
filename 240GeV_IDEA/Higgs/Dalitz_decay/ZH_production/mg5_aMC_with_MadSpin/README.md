@@ -12,12 +12,9 @@ This repository contains the necessary instructions and files to generate Monte 
 * $Z$ is produced as a stable particle along with $l^+ l^- \gamma$ in the LHE file produces after first step and decays in Pythia8 during the the second step (recommended for full SM fidelity)
 * Here, $l^{+/-} = e^{+/-}/\mu^{+/-}$
 
----
 
 ## 0. Setup
-
 Make sure the following are prepared, if not already:
-
 
 ### i. Download cards and config files:
 ```
@@ -33,17 +30,14 @@ wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Da
 cd ..
 ``` 
 
-
 ### ii. heft Model `HC_NLO_X0_UFO` must be present in current working directory.
 
 ```
 wget http://feynrules.irmp.ucl.ac.be/raw-attachment/wiki/HiggsCharacterisation/HC_NLO_X0_UFO.zip
 unzip HC_NLO_X0_UFO.zip
 ```
-
 More about the model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
 -   HC_NLO_X0_UFO stores mu+/- as m+/-, thus we have redefined l+/- in madspin_card.dat
-
 
 ### iii. Set up the environment for MadGraph5_aMC@NLO, MadSpin, Pythia8 and Delphes via Key4HEP stack:
 
@@ -52,7 +46,6 @@ source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2025-05-29
 ```
 `-r 2025-05-29` is currently the latest Key4HEP stack 
 
----
 
 ## 2. LHEvents Generation
 
@@ -66,7 +59,6 @@ DalitzDecay_MS/bin/generate_events -f
 - Generates all 10,000 events in a LHE file
 - Takes time of O(13 hours)
 
----
 
 ## 3. Pythia
 
@@ -74,7 +66,9 @@ DalitzDecay_MS/bin/generate_events -f
 cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
 k4run config/pythia.py -n 10000 --out.filename edm4hep_p8events.root --Pythia8.PythiaInterface.pythiacard p8_lhereader.cmd | tee edm4hep.log
 ```
+
 ## OR
+
 ## 3. Pythia + Delphes
 
 ```
