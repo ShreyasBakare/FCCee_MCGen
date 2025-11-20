@@ -53,6 +53,7 @@ source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2025-05-29
 mg5_aMC proc_card.dat
 cp -f run_card.dat madspin_card.dat DalitzDecay_MS/Cards/.
 DalitzDecay_MS/bin/generate_events -f
+gunzip "DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe.gz"
 ```
 
 ####  Output Behavior
