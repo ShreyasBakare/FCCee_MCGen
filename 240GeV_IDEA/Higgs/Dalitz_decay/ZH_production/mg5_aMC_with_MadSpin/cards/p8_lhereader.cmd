@@ -25,8 +25,8 @@ Stat:showProcessLevel = off         ! additional statistics on MPI
 
 ! 4) Read-in Les Houches Event file - alternative beam and process selection.
 Beams:frameType = 4                      ! read info from a LHEF
-Beams:LHEF = ZH_mg5_dalitz.lhe ! the LHEF to read from
+Beams:LHEF = DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ! the LHEF to read from
 
-! Tau decays to mu nu_tau nu_mu (from pythia8)
+! Z decays leptonically (in pythia8)
 23:onMode = off
 23:onIfAny = 11 13
