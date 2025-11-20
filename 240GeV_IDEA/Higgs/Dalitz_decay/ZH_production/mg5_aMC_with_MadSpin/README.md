@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the necessary instructions and files to generate Monte Carlo (MC) simulation samples of $\mathbf{e^+e^- \to Z H}$ production [using $\mathbf{MadGraph5/_aMC}$] at the Future Circular Collider $e^+e^-$ ($\mathbf{FCC-ee}$) with a center-of-mass energy of $\mathbf{240\ \text{GeV}}$, Where $H$ undergoes a Dalitz decay ($\mathbf{H \to l^+ l^- \gamma}$) [using $\mathbf{MadSpin}$] and (for initial simplification and analysis framework development) $Z$ decays leptonically ($\mathbf{Z \to l^+ l^-}$) [Using $\mathbf{Pythia8}$] with Fast Simulation of $\mathbf{IDEA}$ detector's response [Using $\mathbf{Delphes}$].
+This repository contains the necessary instructions and files to generate Monte Carlo (MC) simulation samples of $\mathbf{e^+e^- \to Z H}$ production [using $\mathbf{MadGraph5\_aMC}$] at the Future Circular Collider $e^+e^-$ ($\mathbf{FCC-ee}$) with a center-of-mass energy of $\mathbf{240\ \text{GeV}}$, Where $H$ undergoes a Dalitz decay ($\mathbf{H \to l^+ l^- \gamma}$) [using $\mathbf{MadSpin}$] and (for initial simplification and analysis framework development) $Z$ decays leptonically ($\mathbf{Z \to l^+ l^-}$) [Using $\mathbf{Pythia8}$] with Fast Simulation of $\mathbf{IDEA}$ detector's response [Using $\mathbf{Delphes}$].
 
 ### Note: 
 * Complete process is divided into three steps
