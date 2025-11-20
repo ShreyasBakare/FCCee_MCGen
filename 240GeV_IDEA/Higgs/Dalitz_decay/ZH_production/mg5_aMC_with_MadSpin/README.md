@@ -9,8 +9,8 @@ This repository contains the necessary instructions and files to generate Monte 
     1. LHEvents generation (MadGraph5_aMC + MadSpin)
     2. Hadronization and showering (Pythia8)
     3. Detector simulation (Delphes)
-* $Z$ is produced as a stable particle along with $l^+ l^- \gamma$ in the LHE file produces after first step and decays in Pythia8 during the the second step (recommended for full SM fidelity)
-* Here, $l^{+/-} = e^{+/-}/\mu^{+/-}$
+* First step produces $Z$ as a stable particle along with $l^+ l^- and \gamma$. This $Z$ decays in the second step using Pythia8 (recommended for full SM fidelity)
+* Here,  $l^{+/-} = e^{+/-}/\mu^{+/-}$
 
 
 ## 0. Setup
@@ -47,7 +47,7 @@ source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2025-05-29
 `-r 2025-05-29` is currently the latest Key4HEP stack 
 
 
-## 2. LHEvents Generation
+## 2. MadGraph5_aMC + MadSpin
 
 ```
 mg5_aMC proc_card.dat
