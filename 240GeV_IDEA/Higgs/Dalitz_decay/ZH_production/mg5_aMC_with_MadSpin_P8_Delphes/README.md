@@ -56,7 +56,7 @@ DalitzDecay_MS/bin/generate_events -f
 gunzip "DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe.gz"
 ```
 
-####  Output Behavior
+###  Output Behavior
 - Generates all 10,000 events in a LHE file
 - Takes time of O(13 hours)
 
