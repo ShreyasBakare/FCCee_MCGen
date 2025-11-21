@@ -9,7 +9,7 @@ This repository '[mg5_aMC_with_MadSpin_P8_Delphes](https://github.com/ShreyasBak
     1. LHEvents generation (MadGraph5_aMC + MadSpin)
     2. Hadronization and showering (Pythia8)
     3. Detector simulation (Delphes)
-* First step produces $Z$ as a stable particle along with $l^+ l^- and  \gamma$. This $Z$ decays in the second step using Pythia8 (recommended for full SM fidelity)
+* First step produces $Z$ as a stable particle along with $l^+ l^- \gamma$. This $Z$ decays in the second step using Pythia8 (recommended for full SM fidelity)
 * Here,  $l^{+/-} = e^{+/-}/\mu^{+/-}$
 
 
