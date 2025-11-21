@@ -18,15 +18,15 @@ Make sure the following are prepared, if not already:
 
 ### 0.1 Download cards and config files:
 ```
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/proc_card.dat
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/run_card.dat
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/madspin_card.dat
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/proc_card.dat
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/run_card.dat
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/madspin_card.dat
 mkdir cards config ; cd cards
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/cards/p8_lhereader.cmd
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/cards/p8_lhereader.cmd
 cd ../config
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/config/pythia.py
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/config/card_IDEA.tcl
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin/config/edm4hep_IDEA.tcl
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/pythia.py
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/card_IDEA.tcl
+wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/edm4hep_IDEA.tcl
 cd ..
 ``` 
 
