@@ -1,8 +1,10 @@
-## # $e^+e^- \to Z H$ ($H \to l^+ l^- \gamma$) at FCC-ee $\mathbf{\sqrt{s}}$ = ${240\ \text{GeV}}$ Only MadGraph5_aMC@NLO (Higgs decay without using MadSpin)
+# $e^+e^- \to Z H$ ($H \to l^+ l^- \gamma$) at FCC-ee $\mathbf{\sqrt{s}}$ = ${240\ \text{GeV}}$ Only MadGraph5_aMC@NLO (Higgs decay without using MadSpin)
+
+## Overview
 
 This repository '[mg5_aMC](https://github.com/ShreyasBakare/FCCee_MCGen/tree/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC' contains the necessary instructions and files to generate Monte Carlo (MC) simulation samples of $\mathbf{e^+e^- \to Z H \to l^+ l^- l^+ l^- \gamma }$ production [using MadGraph5_aMC] at the Future Circular Collider $e^+e^-$ ($\mathbf{FCC-ee}$) with a center-of-mass energy of $\mathbf{240\ \text{GeV}}$. Here I did not use MadSpin or Pythia or Delphes.
 
-## 1. Prerequisites
+## 0. Setup
 
 Make sure the following are prepared, if not already:
 
@@ -25,7 +27,7 @@ wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Da
 wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC/run_card.dat
 ``` 
 
-## 2. Event Generation
+## 1. LHEvents Generation
 ```
 mg5_aMC proc_card.dat
 cp -f run_card.dat DalitzDecay/Cards/.

@@ -61,7 +61,7 @@ gunzip "DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe.gz"
 - Takes time of O(13 hours)
 
 
-## 3. Pythia
+## 3. Pythia8
 
 ```
 cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
@@ -70,7 +70,7 @@ k4run config/pythia.py -n 10000 --out.filename edm4hep_p8events.root --Pythia8.P
 
 ## OR
 
-## 3. Pythia + Delphes
+## 3. Pythia8 + Delphes
 
 ```
 cp DalitzDecay_MS/Events/run_01_decayed_1/unweighted_events.lhe ZH_mg5_dalitz.lhe
