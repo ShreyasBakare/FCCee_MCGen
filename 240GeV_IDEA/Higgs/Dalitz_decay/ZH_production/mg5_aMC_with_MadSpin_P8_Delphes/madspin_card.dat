@@ -18,15 +18,23 @@
 # set BW_cut 15                 # cut on how far the particle can be off-shell
 # set spinmode onshell          # Use one of the madspin special mode
 
-import model ./HC_NLO_X0_UFO
+import model ./HC_NLO_X0_UFO-lepton_masses_no_lepton_yukawas --bypass_check
 
+#set ms_dir ./madspingrid
+#set Nevents_for_max_weigth 250 # number of events for the estimate of the max. weight
+#set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+#set max_running_process 1
+#set spinmode=none
 set ms_dir ./madspingrid
 #set Nevents_for_max_weigth 250 # number of events for the estimate of the max. weight
 set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
 set max_running_process 1
 set spinmode=none
-define l+ = e+ m+
-define l- = e- m-
+define mu+ = m+
+define mu- = m-
+define l+ = e+ mu+
+define l- = e- mu-
+define h = x0
 decay x0 > l+ l- a
 #decay z > l+ l-
 launch

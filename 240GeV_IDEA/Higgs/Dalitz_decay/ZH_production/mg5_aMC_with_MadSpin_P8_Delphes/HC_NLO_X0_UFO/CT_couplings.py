@@ -491,7 +491,7 @@ R2_ggX0_a = Coupling(name = 'R2_ggX0_a',
 
 UV_ggX0_hq =  Coupling(name = 'UV_ggX0_hq',
                        value = 'G_UV_ggX0_hq',
-                       order = {'QNP':1,'QCD':4})
+                       order = {'QNP':1,'QCD':2})
 
 UV_ggX0_hc =  Coupling(name = 'UV_ggX0_hc',
                        value = 'G_UV_ggX0_hc',

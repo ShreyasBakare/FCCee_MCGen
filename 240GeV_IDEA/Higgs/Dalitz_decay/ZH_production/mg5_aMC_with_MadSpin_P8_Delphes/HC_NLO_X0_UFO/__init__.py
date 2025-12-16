@@ -1,3 +1,5 @@
+import function_library 
+import object_library 
 import particles
 import couplings
 import CT_couplings
@@ -8,8 +10,6 @@ import vertices
 import CT_vertices
 import write_param_card
 import coupling_orders
-import function_library
-import object_library
 
 # model options
 gauge = [0]
