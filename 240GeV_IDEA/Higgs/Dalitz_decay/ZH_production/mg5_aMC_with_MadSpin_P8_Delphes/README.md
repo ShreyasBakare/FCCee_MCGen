@@ -18,23 +18,36 @@ Make sure the following are prepared, if not already:
 
 ### 0.1 Download cards and config files:
 ```
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/proc_card.dat
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/run_card.dat
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/madspin_card.dat
-mkdir cards config ; cd cards
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/cards/p8_lhereader.cmd
+# Download main cards
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/proc_card.dat
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/run_card.dat
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/madspin_card.dat
+
+# Create directories
+mkdir cards config 
+
+# Download card configuration
+cd cards
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/cards/p8_lhereader.cmd
+
+# Download general configuration files
 cd ../config
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/pythia.py
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/card_IDEA.tcl
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/edm4hep_IDEA.tcl
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/pythia.py
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/card_IDEA.tcl
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/config/edm4hep_IDEA.tcl
+
+# Return to original directory
 cd ..
 ``` 
 
 ### 0.2 loops_sm and heft Model `HC_NLO_X0_UFO` must be present in current working directory.
 
 ```
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/loop_sm
-wget https://github.com/ShreyasBakare/FCCee_MCGen/blob/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/HC_NLO_X0_UFO
+# Download the loop_sm directory
+svn export https://github.com/ShreyasBakare/FCCee_MCGen/trunk/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/loop_sm
+
+# Download the HC_NLO_X0_UFO directory
+svn export https://github.com/ShreyasBakare/FCCee_MCGen/trunk/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/HC_NLO_X0_UFO
 ```
 - More about the heft model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
 - This webpage is more than 10 years old and does not have the restriction we want to use, thus we get the latest version of the model from CMS gridpack. `/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HtoLLGamma/ZH125_012j_NLO_HtoElElGamma_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz`
