@@ -43,11 +43,13 @@ cd ..
 ### 0.2 loops_sm and heft Model `HC_NLO_X0_UFO` must be present in current working directory.
 
 ```
-# Download the loop_sm directory
-svn export https://github.com/ShreyasBakare/FCCee_MCGen/trunk/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/loop_sm
+# 1. Download the tarballs (using the raw links)
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/loops_sm.tar.gz
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/HC_NLO_X0_UFO.tar.gz
 
-# Download the HC_NLO_X0_UFO directory
-svn export https://github.com/ShreyasBakare/FCCee_MCGen/trunk/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/HC_NLO_X0_UFO
+# 2. Extract them
+tar -xzvf loops_sm.tar.gz
+tar -xzvf HC_NLO_X0_UFO.tar.gz
 ```
 - More about the heft model: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HiggsCharacterisation#no1
 - This webpage is more than 10 years old and does not have the restriction we want to use, thus we get the latest version of the model from CMS gridpack. `/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HtoLLGamma/ZH125_012j_NLO_HtoElElGamma_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz`
