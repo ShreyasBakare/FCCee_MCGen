@@ -44,7 +44,7 @@ cd ..
 
 ```
 # 1. Download the tarballs (using the raw links)
-wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/loops_sm.tar.gz
+wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/loop_sm.tar.gz
 wget https://raw.githubusercontent.com/ShreyasBakare/FCCee_MCGen/main/240GeV_IDEA/Higgs/Dalitz_decay/ZH_production/mg5_aMC_with_MadSpin_P8_Delphes/HC_NLO_X0_UFO.tar.gz
 
 # 2. Extract them
